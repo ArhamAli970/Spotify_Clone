@@ -1,0 +1,443 @@
+
+body{ 
+    font-family: 'Montserrat', sans-serif; 
+    margin: 0;
+    padding: 0; 
+    overflow: hidden; 
+    text-decoration: none;
+    background-color: #000; 
+    color: #fff;
+
+}
+/* .clk{ 
+    position: fixed;
+    top: -20px;
+} */
+
+.main{ 
+    display: flex;
+    height: 100vh; 
+    padding: 0.5rem;
+}
+
+.sidebar{  
+    transition: 0.4s;
+     border-radius: 1rem;
+    width: 280px;  
+    background-color:#000;
+    margin-right:0.5rem;
+}
+
+.main-content{  
+    border-radius: 1rem;
+background-color: #121212;
+overflow: auto;
+flex: 1;  
+padding: 0rem 0rem 0rem 1.5rem;
+}
+
+
+
+
+.nav{  
+    background-color:#121212; 
+    border-radius:1rem ;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100px;
+    padding: 0.5rem 0.75rem;
+
+} 
+a{ 
+    text-decoration: none;
+    color: white;
+}
+
+.nav-option{ 
+    line-height: 2.5rem;
+    opacity: 0.7; 
+    transition: 0.5s; 
+    padding: 0.5rem 0.75rem;
+}
+.nav-option:hover{ 
+    opacity: 1;
+}
+.nav-option a{ 
+    font-size: 1rem; 
+    margin-left: 1rem; 
+    /* color: white; */
+}
+.nav-option i{ 
+    font-size: 1.5rem;
+}
+
+
+.library { 
+    padding: 0.5rem 0.75rem;
+    background-color: #121212;
+    border-radius: 1rem; 
+    height: 100%;
+    margin-top: 0.5rem;
+}
+
+
+.option{ 
+    display: flex; 
+    justify-content: space-between;
+    align-items: center;
+}
+
+.lib-option img{ 
+    height: 1.5rem;
+    width: 1.5rem;
+}
+ 
+.icons i { 
+    font-size: 1.25rem;
+    opacity: 0.7;
+    margin-right: 1rem;
+    
+}
+.icons i:hover{ 
+    opacity: 1;
+    cursor: pointer;
+}
+
+.box1 {
+    margin:0.75rem 0rem;
+    border-radius:0.75rem ; 
+    background-color: #242424;
+    height: 7rem;
+    /* width: 220px; */
+    padding: 0.5rem;
+}
+
+.box-p1{ 
+    font-weight: 700;
+}
+.box-p2{ 
+    font-size: 0.8125rem;
+    font-weight: 400; 
+    opacity: 0.8;
+}
+
+.badge { 
+    background-color: #fff;
+    border: none;
+    border-radius:1rem;
+    padding: 0.25rem  1rem;
+    font-weight: 700;
+    height: 2rem;
+}
+
+
+
+/*  --------sticky nav------------ */
+
+
+.sticky-nav{  
+    position: sticky;
+    top: 0; 
+    z-index: 1;
+    display: flex;
+    justify-content: space-between;
+    background-color: #121212; 
+    align-items: center;
+    padding: 1rem 0rem;
+}
+.burg{ 
+  /* visibility: hidden; */
+  font-size: 1.5rem;
+}
+
+.arrow img{ 
+    margin-left: 0.8rem;
+}
+
+.user{ 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-item{ 
+    margin-right: 1rem;
+}
+
+.dark-badge{ 
+    color: #fff;
+    background-color: #000;
+}
+
+@media(max-width:1000px){ 
+    .hide{ 
+        display: none;
+    }
+}
+
+.card{ 
+    background-color: #242424; 
+    width: 150px; 
+    /* height: 300px;  */
+    padding:0.5rem ; 
+    box-shadow: 2px 2px 8px #121212;
+    border-radius: 0.8rem; 
+    transition: 0.4s;
+}
+
+.cards-container{ 
+    display: flex;
+    /* justify-content: space-evenly; */
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.card:hover{ 
+    background-color: #2e2c2c; 
+    cursor: pointer;
+}
+
+.card img{ 
+    width: 100%; 
+    border-radius: 0.5rem;
+} 
+
+.card-title{ 
+    font-weight: 700; 
+    font-size: 0.9rem;
+
+}
+
+.card-info{ 
+    font-weight: 400;
+    font-size: 0.9rem;
+    opacity: 0.6;
+}
+
+.card{ 
+    margin: 1rem 1rem 0.5rem 0.5rem ;
+}
+
+
+/* ----footer------*/
+
+.footer{ 
+    height: 200px;
+    width: 100%; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.line{ 
+    width: 85%;
+    border-top: 0.5px solid white;
+    opacity: 0.7;
+}
+
+
+/* -------music player--------- */
+
+
+.music-player{  
+    position: fixed;
+    display: flex;
+    background-color: black;
+    bottom: 0;
+    height: 60px;
+    width: 100%;
+}
+
+
+.album{ 
+    width: 25%;
+    /* background-color: hotpink; */
+
+}
+
+.player{ 
+    width: 50%;
+    /* background-color: burlywood; */
+}
+
+.controls{ 
+    width: 25%;
+    /* background-color: cadetblue; */
+}
+
+.player-control-icon{ 
+    width: fit-content;
+    height: 1rem; 
+    margin: 0rem 1.75rem; 
+    opacity: 0.7;
+}
+
+.player-control-icon:hover{ 
+    opacity: 1;
+    cursor: pointer;
+}
+
+.player-controls{ 
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+}
+
+.progress-bar{  
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    
+}
+
+.mid{ 
+    height: 2rem;
+}
+
+.bar{ 
+    width: 50%; 
+    appearance: none;
+    background-color:transparent;
+
+}
+
+.bar::-webkit-slider-runnable-track{ 
+    background-color: #ddd;
+    height: 0.2rem;
+}
+
+.bar::-webkit-slider-thumb{ 
+    appearance: none;
+    margin: -6px;
+background-color: #1bd760;
+border-radius:50%;
+width: 1rem;
+height: 1rem;
+}
+
+/* ---------album-------- */
+.album{ 
+    display: flex;
+
+    align-items: center;
+}
+
+.album img{ 
+    width: 10%;
+    height: 60%;
+    margin: 0rem 0.4rem;
+
+}
+
+.album div p{ 
+    line-height: 3px;
+}
+.sym{ 
+    margin: 0rem 0rem 0rem 2rem;
+}
+
+.song{ 
+    font-size: 0.8rem; 
+    font-weight: 700;
+}
+
+.singer{ 
+    font-size: 0.6rem;
+    font-weight: 400;
+}
+
+.controls{ 
+    display: flex;
+    align-items: center;
+}
+
+.ic{ 
+    font-size: 1.3rem;
+    margin-left: 0.7rem;
+}
+
+.small{ 
+    width:30%;
+}
+
+.burg { 
+    display:none;
+}
+.clk{ 
+    position: fixed;
+    top: -20px;
+}
+
+.cross{ 
+  position: fixed;
+  top: 10px;
+  left: 250px;
+  font-size:1.5rem;
+  display: none;
+    transition-delay:0.4s;
+}
+
+@media(max-width:800px){ 
+    .sidebar{ 
+        position: fixed;  
+        top: 0;
+        height: 100vh;
+        z-index: 5;
+        left: -270px; 
+        border-radius: 0px;
+    }
+
+   .arrow{ 
+    visibility: hidden;
+   }
+   input[type="checkbox"]:checked + .main .sidebar .cross{ 
+    display: block;
+   }
+
+    .burg{ 
+       display:block;
+       position: fixed;
+       top: 1rem;
+       left: 10px;
+       font-size: 2rem; 
+       z-index: 2;
+       /* left: 10rem; */
+    }
+
+    input[type="checkbox"]:checked + .main .sidebar{ 
+        left: 0px;
+    } 
+   
+
+    .dark-badge{ 
+        display: none;
+    }
+    .controls{ 
+    visibility: hidden;
+    width: 0%;
+    }  
+    .player{ 
+        width: 75%;
+    }
+    .music-player { 
+        flex-direction: column;
+        height: 100px;
+       justify-content: space-between;
+       align-items: center;
+    } 
+    .player .player-controls{ 
+        visibility: hidden;
+
+    }
+    .album{ 
+        width: 30%;
+    }
+    /* .curr-time,.tot-time{ 
+        visibility: hidden;
+    } */
+
+
+
+}
